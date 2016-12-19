@@ -20,7 +20,7 @@ int main(void)
 	
 	//const std::string conf_doc = "test.json";
 
-  	bool parsingSuccessful = reader.parse( currentprice_doc, root, true );
+  	/*bool parsingSuccessful = reader.parse( currentprice_doc, root, true );
 	if ( !parsingSuccessful )
 	{
     	// report to the user the failure and their locations in the document.
@@ -33,7 +33,7 @@ int main(void)
 	std::cout << plugins.size();
 	for ( int index = 0; index < plugins.size(); ++index ) {
  		  std::cout << plugins[index].asString() << std::endl;
- 	}
+ 	}*/
 
 
   CURL *curl_handle;
