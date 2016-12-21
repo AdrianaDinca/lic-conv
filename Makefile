@@ -3,4 +3,5 @@ conv: conv.cpp json/json.h json/json-forwards.h jsoncpp.cpp
 
 clean: conv
 	rm -fr conv
-	rm -fr body.out
+	rm -fr currentprice.json
+	
