@@ -39,14 +39,15 @@ int main(void)
 		
 		fb.close();
 	}
-	const Json::Value plugins = root["time"];
+	
+	std::cout << root["bpi"]["USD"]["code"].asString() << " ";
+	std::cout << root["bpi"]["USD"]["rate"].asString() << std::endl;
 
-	std::cout << plugins.size();
-	for ( int index = 0; index < plugins.size(); ++index ) {
- 		  std::cout << plugins[index].asString() << std::endl;
- 	}
+	std::cout << root["bpi"]["EUR"]["code"].asString() << " ";
+	std::cout << root["bpi"]["EUR"]["rate"].asString() << std::endl;
 
- 	std::cout << "after plugins\n";
+	std::cout << root["bpi"]["GBP"]["code"].asString() << " ";
+	std::cout << root["bpi"]["GBP"]["rate"].asString() << std::endl;
  
   return 0;
 }
